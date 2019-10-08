@@ -1,11 +1,11 @@
-import documents.Document;
+package fr.umontpellier.iut;
 
 import java.util.HashMap;
-import java.util.Map;
+import fr.umontpellier.iut.documents.Document;
 
 public class AppEmprunts {
 
-    static Map<String, Document> fonds = new HashMap<>();
+    private static HashMap<String, Document> fonds = new HashMap<>();
 
     public static void constituerFonds() {
         throw new RuntimeException("Méthode à implémenter");

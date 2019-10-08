@@ -1,4 +1,4 @@
-package documents;
+package fr.umontpellier.iut.documents;
 
 import java.time.LocalDate;
 
@@ -14,7 +14,7 @@ public class Document {
         return dateRetour;
     }
 
-    public void setDateRetour(LocalDate dateRetour) {
+    protected void setDateRetour(LocalDate dateRetour) {
         this.dateRetour = dateRetour;
     }
 
