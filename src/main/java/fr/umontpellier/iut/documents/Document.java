@@ -14,7 +14,7 @@ public class Document {
         return dateRetour;
     }
 
-    protected void setDateRetour(LocalDate dateRetour) {
+    public void setDateRetour(LocalDate dateRetour) {
         this.dateRetour = dateRetour;
     }
 
