@@ -7,7 +7,7 @@
 * Le [sujet du TD](TD5.pdf) en format .pdf téléchargeable et imprimable.
 
 
-## TD5
+## TD5 -- "_Polymorphisation obscure_" dans une médiathèque
 #### _Thème_ : Modèles de conception (_Visiteur_)
 
 Cliquez sur le lien ci-dessous pour faire votre fork privé du TD (**attention, pas de fork à la main !**):
@@ -40,7 +40,7 @@ En premier lieu, on va mettre en place le code qui calcule les dates de retour d
    La méthode `ajouter(int nbJours)` sera souvent utilisée dans le programme.
     
 3. La classe `AppEmprunts` est la classe principale de ce module. Elle gère le fonds documentaire sous la forme d’une `Map` qui associe la cote d’un document (une chaîne de caractères) au document lui-même.
-   * Tout d'abord complétez la méthode `constitueFonds()` pour initialiser le fonds documentaire à partir des informations suivantes: 
+   * Tout d'abord complétez la méthode `constituerFonds()` pour initialiser le fonds documentaire à partir des informations suivantes: 
     
         * `LI_ORW_1` &Rightarrow; `1984`, `LI_TOL_1`  &Rightarrow; `Le seigneur des anneaux`,
         * `CD_STO_1`  &Rightarrow; `Satisfaction`, `CD_BEA_1`  &Rightarrow; `Abbey Road`,
@@ -72,9 +72,7 @@ En premier lieu, on va mettre en place le code qui calcule les dates de retour d
    Vous venez de mettre en place le modèle de conception _Visiteur_ : l'interface `PolitiqueEmprunt` est le visiteur et les sous-classes de `Document` sont des éléments visitables.
    Vous pouvez maintenant renforcer l'encapsulation des documents en changeant la visibilité de la méthode `setDateRetour(...)` en `protected`.
 
-   5. Vérifiez dans la classe principale (toujours en affichant les informations sur chaque document). Faites le diagramme de classe pour établir l'analogie avec le cours. Quels sont les avantages et les inconvénients de l'utilisation du modèle dans votre exercice ?
-   
-   
+   5. Vérifiez dans la classe principale (toujours en affichant les informations sur chaque document). Faites le diagramme de classe. Quels sont les avantages et les inconvénients de l'utilisation du modèle dans votre exercice ?
    
 #### Exercice 3 - les profils des emprunteurs
 
