@@ -10,6 +10,9 @@
 ## TD5
 #### _Thème_ : Modèles de conception (_Visiteur_)
 
+Cliquez sur le lien ci-dessous pour faire votre fork privé du TD (**attention, pas de fork à la main !**):
+
+LIEN À METTRE ICI
 
 ### Consignes
 * Respecter les principes [SOLID](https://github.com/IUTInfoMontp-M3105/Ressources).
