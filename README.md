@@ -7,12 +7,12 @@
 * Le [sujet du TD](TD5.pdf) en format .pdf téléchargeable et imprimable.
 
 
-## TD5 -- "_Polymorphisation obscure_" dans une médiathèque
+## TD5 - "_Polymorphisation obscure_" dans une médiathèque
 #### _Thème_ : Modèles de conception (_Visiteur_)
 
 Cliquez sur le lien ci-dessous pour faire votre fork privé du TD (**attention, pas de fork à la main !**):
 
-LIEN À METTRE ICI
+https://classroom.github.com/a/-kts0MGp
 
 **Consignes**: respecter les divers principes et bonnes pratiques de programmation
 
