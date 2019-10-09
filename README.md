@@ -34,19 +34,19 @@ En premier lieu, on va mettre en place le code qui calcule les dates de retour d
    
    A partir de la classe `Document`, créez les classes correspondant aux livres, CD et films. Redéfinissez dans chacune de ces 3 classes la méthode `toString()` en évitant la duplication de code.
   
-2. Écrivez une classe `CalculDate` qui propose la méthode statique `ajouter(int nbJours)` à laquelle on transmet un entier correspondant à un nombre de jours, et qui retourne une date future : la date du jour augmentée de ce nombre de jours. Voici la syntaxe pour obtenir cette date :
+2. Écrivez une classe `CalculDate` qui propose la méthode `static int ajouter(int nbJours)` à laquelle on transmet un entier correspondant à un nombre de jours, et qui retourne une date future : la date du jour augmentée de ce nombre de jours. Voici la syntaxe pour obtenir cette date :
    `LocalDate.now().plusDays(nbJours);`   
    
    La méthode `ajouter(int nbJours)` sera souvent utilisée dans le programme.
     
-3. La classe `AppEmprunts` est la classe principale de ce module. Elle gère le fonds documentaire sous la forme d’une `Map` qui associe la cote d’un document (une chaîne de caractères) au document lui-même.
-   * Tout d'abord complétez la méthode `constituerFonds()` pour initialiser le fonds documentaire à partir des informations suivantes: 
+3. La classe `AppEmprunts` est la classe principale de ce module. Elle gère le fonds documentaire sous la forme d’une `Map` qui associe la cote d’un document (une chaîne de caractères) au document lui-même. Il faudra la compléter :
+   * Tout d'abord implémentez la méthode `constituerFonds()` pour initialiser le fonds documentaire à partir des informations suivantes: 
     
         * `LI_ORW_1` &Rightarrow; `1984`, `LI_TOL_1`  &Rightarrow; `Le seigneur des anneaux`,
         * `CD_STO_1`  &Rightarrow; `Satisfaction`, `CD_BEA_1`  &Rightarrow; `Abbey Road`,
         * `FI_KUB_1`  &Rightarrow; `2001 Odyssée de l'espace`, `FI_SCO_1`  &Rightarrow; `Taxi Driver`.
    
-   * Dans la méthode `main()`, après avoir constitué le fonds de la médiathèque, créez un panier de documents à emprunter sous la forme d’une `ArrayList` de documents.
+   * Dans la méthode `main(String args[])`, après avoir constitué le fonds de la médiathèque, créez un panier de documents à emprunter sous la forme d’une `ArrayList` de documents.
      
    * Ajoutez une méthode qui gère un emprunt pour un nombre fixe de jours (15 par exemple) : on lui transmet une `ArrayList` (le panier des documents à emprunter), cette méthode affecte la date de retour de chacun des documents. Cette date de retour sera calculée en utilisant la méthode statique de la classe `CalculDate`.
    
@@ -69,7 +69,9 @@ En premier lieu, on va mettre en place le code qui calcule les dates de retour d
    
    4. Ajoutez une méthode abstraite `void emprunter(PolitiqueEmprunt p)` à la classe `Document` et implémentez-la dans chacune des 3 classes `Livre`, `CD`, `Film`. En utilisant l'objet `p`, cette méthode doit mettre à jour la date de retour du document.
    
-   Vous venez de mettre en place le modèle de conception _Visiteur_ : l'interface `PolitiqueEmprunt` est le visiteur et les sous-classes de `Document` sont des éléments visitables.
+   **Question :** _le code des différentes implémentations de `void emprunter(PolitiqueEmprunt p)` est assez "répétitif", ne pourrait-on pas le factoriser dans la classe-mère `Document` ? Justifiez._
+   
+   Vous venez de mettre en place le modèle de conception _Visiteur_ vu en cours : l'interface `PolitiqueEmprunt` est le visiteur et les sous-classes de `Document` sont des éléments visitables.
    Vous pouvez maintenant renforcer l'encapsulation des documents en changeant la visibilité de la méthode `setDateRetour(...)` en `protected`.
 
    5. Vérifiez dans la classe principale (toujours en affichant les informations sur chaque document). Faites le diagramme de classe. Quels sont les avantages et les inconvénients de l'utilisation du modèle dans votre exercice ?
