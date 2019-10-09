@@ -14,8 +14,7 @@ Cliquez sur le lien ci-dessous pour faire votre fork privé du TD (**attention, 
 
 LIEN À METTRE ICI
 
-### Consignes
-* Respecter les principes [SOLID](https://github.com/IUTInfoMontp-M3105/Ressources).
+**Consignes**: respecter les divers principes et bonnes pratiques de programmation
 
 Date limite de rendu de votre code sur votre dépôt privé GitHub : **Dimanche 20 octobre 2019 à 23:00**
 
