@@ -33,7 +33,7 @@ En premier lieu, on va mettre en place le code qui calcule les dates de retour d
    
    A partir de la classe `Document`, créez les classes correspondant aux livres, CD et films. Redéfinissez dans chacune de ces 3 classes la méthode `toString()` en évitant la duplication de code.
   
-2. Écrivez une classe `CalculDate` qui propose la méthode `static int ajouter(int nbJours)` à laquelle on transmet un entier correspondant à un nombre de jours, et qui retourne une date future : la date du jour augmentée de ce nombre de jours. Voici la syntaxe pour obtenir cette date :
+2. Écrivez une classe `CalculDate` qui propose la méthode `static LocalDate ajouter(int nbJours)` à laquelle on transmet un entier correspondant à un nombre de jours, et qui retourne une date future : la date du jour augmentée de ce nombre de jours. Voici la syntaxe pour obtenir cette date :
    `LocalDate.now().plusDays(nbJours);`   
    
    La méthode `ajouter(int nbJours)` sera souvent utilisée dans le programme.
