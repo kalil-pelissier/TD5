@@ -64,7 +64,7 @@ En premier lieu, on va mettre en place le code qui calcule les dates de retour d
    
    2. Créez un package `fr.umontpellier.iut.politiques` et déclarez une interface `PolitiqueEmprunt` qui propose 3 méthodes `LocalDate calculerDateRetour(...)`, chacune avec un type de document différent en paramètre.
     
-   3. Implémentez l’interface `PolitiqueEmprunt` en 2 classes `EmpruntDateFixe` et `EmpruntSelonTypeDoc`. Les différentes méthodes `LocalDate calculerDateRetour(...)` devraient calculer et retourner des dates de retour en fonction du type de document passé en paramètre. Pour la classe `EmpruntFixeSelonTypeDoc` vous supposerez que les dates fixes sont : 10 jours pour les CDs, 20 jours pour les livres et 5 jours pour les films.
+   3. Implémentez l’interface `PolitiqueEmprunt` en 2 classes `EmpruntDateFixe` et `EmpruntSelonTypeDoc`. Les différentes méthodes `LocalDate calculerDateRetour(...)` devraient calculer et retourner des dates de retour en fonction du type de document passé en paramètre. Pour la classe `EmpruntSelonTypeDoc` vous supposerez que les dates fixes sont : 10 jours pour les CDs, 20 jours pour les livres et 5 jours pour les films.
    
    4. Ajoutez une méthode abstraite `void emprunter(PolitiqueEmprunt p)` à la classe `Document` et implémentez-la dans chacune des 3 classes `Livre`, `CD`, `Film`. En utilisant l'objet `p`, cette méthode doit mettre à jour la date de retour du document.
    
