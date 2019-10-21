@@ -1,8 +1,10 @@
 package fr.umontpellier.iut.documents;
 
+import fr.umontpellier.iut.politique.PolitiqueEmprunt;
+
 import java.time.LocalDate;
 
-public class Document {
+public abstract class Document {
     private LocalDate dateRetour;
     private String titre;
 
@@ -14,13 +16,15 @@ public class Document {
         return dateRetour;
     }
 
-    public void setDateRetour(LocalDate dateRetour) {
+    protected void setDateRetour(LocalDate dateRetour) {
         this.dateRetour = dateRetour;
     }
 
     public String getTitre() {
         return titre;
     }
+
+    public abstract void emprunter(PolitiqueEmprunt p);
 
     @Override
     public String toString() {
